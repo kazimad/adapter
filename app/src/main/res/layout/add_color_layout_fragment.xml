@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="100">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/addText"
+        android:layout_marginTop="49dp"
+        android:clickable="false"
+        android:text="Добавление цвета"
+        android:autoText="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Имя"
+        android:id="@+id/nameText"
+        android:layout_below="@+id/addText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Цвет"
+        android:id="@+id/colorText"
+        android:layout_below="@+id/nameText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить!"
+        android:id="@+id/addButton"
+        android:layout_below="@+id/colorText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameAdd"
+        android:layout_above="@+id/colorAdd"
+        android:layout_alignLeft="@+id/colorAdd"
+        android:layout_alignStart="@+id/colorAdd"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+        <!--android:layout_weight="80"-->
+
+
+    <EditText
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/colorAdd"
+        android:layout_below="@+id/nameText"
+        android:layout_alignLeft="@+id/addText"
+        android:layout_alignStart="@+id/addText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+        <!--android:layout_weight = "80"-->
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/addButton"
+        android:layout_alignStart="@+id/addButton"
+        android:layout_alignRight="@+id/addButton"
+        android:layout_alignEnd="@+id/addButton"
+
+        android:layout_alignParentStart="false"
+        android:textAlignment="center" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить!"
+        android:id="@+id/btnFromSpinner"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="---------------ИЛИ---------------"
+        android:id="@+id/textView"
+        android:layout_above="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:password="false"
+        android:singleLine="true" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="myTheme1" parent="Theme.AppCompat.Light">
+
+        <item name="android:editTextStyle">@style/myEdit_text</item>
+
+        <item name="android:buttonStyle">@style/myButton_Stile</item>
+        <item name="android:dropDownSpinnerStyle">@style/SpinnerAppTheme</item>
+
+    </style>
+
+</resources>

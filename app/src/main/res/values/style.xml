@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name = "myButton_Stile" parent="android:Widget.Button">
+        <item name="android:background">@drawable/my_button</item>
+    </style>
+
+    <style name="myEdit_text" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/my_edit_text1</item>
+    </style>
+</resources>
